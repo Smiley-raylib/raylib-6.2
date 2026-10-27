@@ -15,7 +15,7 @@ newoption
         { "openges3", "OpenGL ES3"},
         { "software", "OpenGL 1.1 Software Render"}
     },
-    default = "software"
+    default = "opengl33"
 }
 
 newoption
@@ -28,7 +28,7 @@ newoption
         { "rgfw", "RGFW"},
         { "win32", "WIN32"},
     },
-    default = "rgfw"
+    default = "glfw"
 }
 
 newoption
@@ -119,11 +119,11 @@ end
 downloadRaylib = false
 raylib_dir = "external/raylib-6.2"
 
-workspaceName = 'MyGame'
-baseName = path.getbasename(path.getdirectory(os.getcwd()));
+workspaceName = 'game'
+--baseName = path.getbasename(path.getdirectory(os.getcwd()));
 
 --if (baseName ~= 'raylib-quickstart') then
-    workspaceName = baseName
+    --workspaceName = baseName
 --end
 
 if (os.isdir('build_files') == false) then
@@ -137,7 +137,8 @@ end
 workspace (workspaceName)
     location "../"
     configurations { "Debug", "Release"}
-    platforms { "x64", "x86", "ARM64"}
+    --platforms { "x64", "x86", "ARM64"}
+    platforms { "x64"}
 
     defaultplatform ("x64")
 
@@ -155,8 +156,8 @@ workspace (workspaceName)
     filter { "platforms:x64" }
         architecture "x86_64"
 
-    filter { "platforms:ARM64" }
-        architecture "ARM64"
+    --filter { "platforms:ARM64" }
+    --    architecture "ARM64"
 
     filter {}
 

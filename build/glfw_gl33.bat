@@ -1,0 +1,1 @@
+premake5.exe vs2026 --backend=glfw --graphics=opengl33
