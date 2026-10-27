@@ -37,19 +37,19 @@
 // Mandatory modules: rcore, rlgl
 //------------------------------------------------------------------------------------
 #ifndef SUPPORT_MODULE_RSHAPES
-    #define SUPPORT_MODULE_RSHAPES      1
+    #define SUPPORT_MODULE_RSHAPES      0
 #endif
 #ifndef SUPPORT_MODULE_RTEXTURES
-    #define SUPPORT_MODULE_RTEXTURES    1
+    #define SUPPORT_MODULE_RTEXTURES    0
 #endif
 #ifndef SUPPORT_MODULE_RTEXT
-    #define SUPPORT_MODULE_RTEXT        1       // WARNING: It requires SUPPORT_MODULE_RTEXTURES to load sprite font textures
+    #define SUPPORT_MODULE_RTEXT        0       // WARNING: It requires SUPPORT_MODULE_RTEXTURES to load sprite font textures
 #endif
 #ifndef SUPPORT_MODULE_RMODELS
-    #define SUPPORT_MODULE_RMODELS      1
+    #define SUPPORT_MODULE_RMODELS      0
 #endif
 #ifndef SUPPORT_MODULE_RAUDIO
-    #define SUPPORT_MODULE_RAUDIO       1
+    #define SUPPORT_MODULE_RAUDIO       0
 #endif
 
 //------------------------------------------------------------------------------------

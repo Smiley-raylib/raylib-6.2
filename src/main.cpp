@@ -1,4 +1,5 @@
 #include <raylib.h>
+#include <rlgl.h>
 
 int main()
 {
@@ -7,7 +8,7 @@ int main()
 	{
 		BeginDrawing();
 		ClearBackground(BLACK);
-		DrawCircleV(GetMousePosition(), 20.0f, RED);
+		// DrawCircle == compiler error!
 		EndDrawing();
 	}
 
